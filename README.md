@@ -1,6 +1,6 @@
 # A basic microservice system
 
-This is the parent repo for a small microservice project. It consists of four small services written in Nodejs.
+This is the docker-compose microservice setup repo. It consists of four small services written in Nodejs.
 
 - [api gateway service](https://github.com/FelipeNystrom/api-gateway)
 - [user and authentication service](https://github.com/FelipeNystrom/auth-user-sevice)
