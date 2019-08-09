@@ -99,3 +99,19 @@ services:
         # Uncomment if you want to connect to service directly
         - '3004:3000'
         - '9003:9229'
+  product-service:
+    build:
+      dockerfile: Dockerfile.debug
+      context: ../services/products-service
+      labels:
+          - "serviceRoute=/products"
+          - "serviceName=products-service"
+    volumes:
+      - /products-service/node_modules
+      - ../services/products-service:/products-service
+    environment:
+        - PORT=3000
+    ports: 
+      # Uncomment if you want to connect to service directly
+      - '3005:3000'
+      - '9002:9229'
