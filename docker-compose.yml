@@ -114,4 +114,4 @@ services:
     ports: 
       # Uncomment if you want to connect to service directly
       - '3005:3000'
-      - '9002:9229'
+      - '9004:9229'
